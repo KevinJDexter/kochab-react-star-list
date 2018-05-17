@@ -1,19 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class StarList extends Component {
-  constructor(props) {
-    super(props);
-  }
-  render () {
-    return (
-      <ul>
-          {this.props.starList.map(star =>
-            <li key={star.name}>
-              The star {star.name} is {star.diameter} in diameter.
+const StarList = (props) => (<ul>
+  {props.starList.map(star =>
+    <li key={star.name}>
+      The star {star.name} is {star.diameter} in diameter.
             </li>)}
-        </ul>
-    )
-  }
-}
+</ul>
+)
 
-export default StarList;
+export default StarList

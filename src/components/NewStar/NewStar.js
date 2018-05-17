@@ -1,17 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class NewStar extends Component {
-  constructor(props) {
-    super(props)
-  }
-  render() {
-    return (
+const NewStar = (props) => (
         <p>
-          {this.props.newStar.name} has a diameter of {this.props.newStar.diameter}
-          {/* The first item in the array is: {this.state.starList[0]} */}
+          {props.newStar.name} has a diameter of {props.newStar.diameter}
         </p>
     );
-  }
-}
+
 
 export default NewStar;
